@@ -1,0 +1,35 @@
+<header class="bg-primary text-center text-white py-5">
+    <div class="container">
+        <img src="/dist/assets/images/square.jpg" class="img-fluid rounded-circle" width="150" alt="profile">
+        <div class="mt-3">
+            {{#each about}}
+            <h3 class="text-uppercase">{{name}}</h3>
+            <p class="lead text-capitalize">{{profession}}</p>
+
+            <hr>
+
+            <h5>Contact :</h5>
+            <ul class="list-unstyled">
+                <li>
+                    <a href="mailto:{{email}}" class="text-white">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <span>{{email}}</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="tel:{{phone}}" class="text-white">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <span>{{phone}}</span>
+                    </a>
+                </li>
+                <li>
+                    <address>
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        {{address}}, {{city}}
+                    </address>
+                </li>
+            </ul>
+            {{/each}}
+        </div>
+    </div>
+</header>
