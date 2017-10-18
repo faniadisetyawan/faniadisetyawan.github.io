@@ -1,0 +1,20 @@
+[
+    {
+        "language": "HTML 5",
+        "percentage": "99",
+        "theme-color": "#E44D26",
+        "bg-color": "#F16529"
+    },
+    {
+        "language": "CSS 3",
+        "percentage": "95",
+        "theme-color": "#0277BD",
+        "bg-color": "#039BE5"
+    },
+    {
+        "language": "Javascript",
+        "percentage": "85",
+        "theme-color": "#E5A228",
+        "bg-color": "#F1BF26"
+    }
+]
