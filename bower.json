@@ -16,6 +16,9 @@
   ],
   "dependencies": {
     "font-awesome": "^4.7.0",
-    "bootstrap": "v4.0.0-beta"
+    "bootstrap": "v4.0.0-beta",
+    "chart.js": "^2.7.0",
+    "morris.js": "morrisjs#^0.5.1",
+    "jquery-knob": "^1.2.13"
   }
 }

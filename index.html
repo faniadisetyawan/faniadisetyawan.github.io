@@ -13,11 +13,12 @@
 		<meta name="application-name" content="html kit">
 		<meta name="theme-color" content="#ffffff">
 
+		<link rel="stylesheet" href="/dist/assets/css/vendor.css">
 		<link rel="stylesheet" href="/dist/assets/css/app.css">
 	</head>
 	<body>
 		
-		<header class="bg-primary text-center text-white py-5">
+		<header class="bg-danger text-center text-white py-5">
 		    <div class="container">
 		        <img src="/dist/assets/images/square.jpg" class="img-fluid rounded-circle" width="150" alt="profile">
 		        <div class="mt-3">
@@ -49,9 +50,112 @@
 		            </ul>
 		        </div>
 		    </div>
-		</header>		<div class="container">
-		    <!-- <h5>hello</h5> -->
-		</div>
+		</header>		<!-- skills -->
+		<section class="py-5">
+			<div class="container">
+				<h3 class="text-center font-weight-bold text-uppercase section-title">Skills</h3>
+				<div class="row">
+					<div class="col-sm-3 text-center">
+						<input type="text" 
+							value="100" 
+							data-width="150" 
+							data-height="150" 
+							data-fgColor="#E44D26" 
+							class="skills" readonly>
+						<p>HTML 5</p>
+					</div>
+					<div class="col-sm-3 text-center">
+						<input type="text" 
+							value="95" 
+							data-width="150" 
+							data-height="150" 
+							data-fgColor="#0277BD" 
+							class="skills" readonly>
+						<p>CSS 3</p>
+					</div>
+					<div class="col-sm-3 text-center">
+						<input type="text" 
+							value="85" 
+							data-width="150" 
+							data-height="150" 
+							data-fgColor="#E5A228" 
+							class="skills" readonly>
+						<p>Javascript</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		
+		<!-- education -->
+		<section class="bg-light py-5">
+			<div class="container">
+				<h3 class="text-center font-weight-bold text-uppercase section-title">Education</h3>
+				<div class="row">
+					<div class="col-sm-4 text-center">
+						<img src="/dist/assets/images/education-icon.png" width="150px" alt="icon">
+					</div>
+					<div class="col-sm-8">
+						<div class="row">
+							<div class="col-sm-6 mb-5">
+								<h5 class="font-weight-bold">2011 - 2015</h5>
+								<small class="text-muted">
+									<i>Universitas Gadjah Mada</i>
+								</small>
+							</div>
+							<div class="col-sm-6 mb-5">
+								<h5 class="font-weight-bold">2008 - 2011</h5>
+								<small class="text-muted">
+									<i>SMA Negeri 2 Kediri</i>
+								</small>
+							</div>
+							<div class="col-sm-6 mb-5">
+								<h5 class="font-weight-bold">2005 - 2008</h5>
+								<small class="text-muted">
+									<i>SMP Negeri 1 Ngadiluwih</i>
+								</small>
+							</div>
+							<div class="col-sm-6 mb-5">
+								<h5 class="font-weight-bold">1999 - 2005</h5>
+								<small class="text-muted">
+									<i>SD Negeri Purwokerto I</i>
+								</small>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- work experience -->
+		<section class="py-5">
+			<div class="container text-center">
+				<h3 class="text-center font-weight-bold text-uppercase section-title">Work experience</h3>
+				<div class="row">
+					<div class="col-sm-6">
+						<div style="height:85px">
+							<img src="/dist/assets/images/company/erporate.png" width="200" alt="erporate">				
+						</div>
+						<div class="mb-3">
+							<h5 class="font-weight-bold mb-0">2016 - 2017</h5>
+							<small class="text-muted">(desember - sekarang)</small>
+						</div>
+						<q class="mt-3 lead text-capitalize">front end developer</q>
+					</div>
+					<div class="col-sm-6">
+						<div style="height:85px">
+							<img src="/dist/assets/images/company/cafeimers.png" width="200" alt="jogja virtual office">				
+						</div>
+						<div class="mb-3">
+							<h5 class="font-weight-bold mb-0">2015 - 2016</h5>
+							<small class="text-muted">(november - april)</small>
+						</div>
+						<q class="mt-3 lead text-capitalize">full stack developer</q>
+					</div>
+				</div>
+			</div>
+		</section>
+		
 		<footer class="bg-dark text-center text-white py-3">
 		    <div class="container">
 		        <span>
@@ -60,5 +164,6 @@
 		    </div>
 		</footer>
 		<script src="/dist/assets/js/app.js"></script>
+		
 	</body>
 </html>

@@ -5,6 +5,23 @@
         "email": "faniadisetyawan@gmail.com",
         "phone": "+6282132035905",
         "address": "Jl. Mulyorini, Kec. Ngadiluwih",
-        "city": "Kab. Kediri, East Java"
+        "city": "Kab. Kediri, East Java",
+        "skills": [
+            {
+                "language": "HTML 5",
+                "percentage": "100",
+                "theme-color": "#E44D26"
+            },
+            {
+                "language": "CSS 3",
+                "percentage": "95",
+                "theme-color": "#0277BD"
+            },
+            {
+                "language": "Javascript",
+                "percentage": "85",
+                "theme-color": "#E5A228"
+            }
+        ]
     }
 ]

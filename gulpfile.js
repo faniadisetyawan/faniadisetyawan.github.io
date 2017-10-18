@@ -19,10 +19,17 @@ var PATHS = {
     fonts: [
         'bower_components/font-awesome/fonts/**/*'
     ],
+    stylesheet: [
+        'bower_components/morris.js/morris.css'
+    ],
     javascript: [
         'bower_components/jquery/dist/jquery.slim.min.js',
         'bower_components/popper.js/dist/umd/popper.min.js',
         'bower_components/bootstrap/dist/js/bootstrap.min.js',
+        'bower_components/jquery-knob/dist/jquery.knob.min.js',
+        'bower_components/chart.js/dist/Chart.min.js',
+        'bower_components/raphael/raphael.min.js',
+        'bower_components/morris.js/morris.min.js',
         'src/assets/js/**/*.js'
     ]
 }
@@ -66,6 +73,12 @@ gulp.task('sass', () => {
         .pipe(gulp.dest('dist/assets/css'))
 })
 
+gulp.task('stylesheet', () => {
+    return gulp.src(PATHS.stylesheet)
+        .pipe($.concat('vendor.css'))
+        .pipe(gulp.dest('dist/assets/css'))
+})
+
 // Combine JavaScript into one file
 // In production, the file is minified
 gulp.task('javascript', (cb) => {
@@ -88,7 +101,7 @@ gulp.task('images', () => {
 })
 
 gulp.task('build', (done) => {
-    sequence('clean', ['pages', 'copy:fonts', 'sass', 'javascript', 'images'], done);
+    sequence('clean', ['pages', 'copy:fonts', 'sass', 'stylesheet', 'javascript', 'images'], done);
 })
 
 gulp.task('server', () => {
@@ -100,7 +113,7 @@ gulp.task('server', () => {
 
 gulp.task('default', ['build', 'server'], () => {
     gulp.watch(['src/pages/**/*.html',], ['pages', browser.reload]);
-    gulp.watch(['src/{layouts,partials,helpers,data}/**/*.html'], ['pages:reset', browser.reload]);
+    gulp.watch(['src/{layouts,partials,helpers,data}/**/*'], ['pages:reset', browser.reload]);
     gulp.watch(['src/assets/scss/**/*.scss'], ['sass', browser.reload]);
     gulp.watch(['src/assets/js/**/*.js'], ['javascript', browser.reload]);
     gulp.watch(['src/assets/images/**/*'], ['images', browser.reload]);

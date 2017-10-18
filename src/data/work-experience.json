@@ -1,0 +1,20 @@
+[
+    {
+        "companyName": "erporate",
+        "from": 2016,
+        "to": 2017,
+        "from_month": "desember",
+        "to_month": "sekarang",
+        "position": "front end developer",
+        "logo": "/dist/assets/images/company/erporate.png"
+    },
+    {
+        "companyName": "jogja virtual office",
+        "from": 2015,
+        "to": 2016,
+        "from_month": "november",
+        "to_month": "april",
+        "position": "full stack developer",
+        "logo": "/dist/assets/images/company/cafeimers.png"
+    }
+]
